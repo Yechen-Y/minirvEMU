@@ -16,6 +16,10 @@ extern struct ins
     uint8_t funct7;
 } *ins;
 
-
+void inst_cycle();
+uint32_t fetch_Ins();
+void decode_Ins(uint32_t instruction);
+void execute();
+int32_t imm_Gen(uint8_t flag);
 
 #endif
